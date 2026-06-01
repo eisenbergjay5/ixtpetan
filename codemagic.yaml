@@ -16,6 +16,7 @@ workflows:
         XCODE_SCHEME: "IXTPetanqueClub"
         BUNDLE_ID: "com.ixt.petanqueclub"
         APP_STORE_APPLE_ID: "6775163240"
+        APPLE_TEAM_ID: "7J7RF4D7KY"
       xcode: latest
       cocoapods: default
 
@@ -64,6 +65,11 @@ workflows:
         script: |
           xcode-project use-profiles \
             --project "$CM_BUILD_DIR/$XCODE_PROJECT"
+          xcodebuild -project "$CM_BUILD_DIR/$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -showBuildSettings \
+            DEVELOPMENT_TEAM="$APPLE_TEAM_ID" \
+            | grep -E "DEVELOPMENT_TEAM|CODE_SIGN_STYLE|CODE_SIGN_IDENTITY|PROVISIONING_PROFILE|PRODUCT_BUNDLE_IDENTIFIER"
 
       - name: Increment build number
         script: |
@@ -80,7 +86,8 @@ workflows:
         script: |
           xcode-project build-ipa \
             --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
-            --scheme "$XCODE_SCHEME"
+            --scheme "$XCODE_SCHEME" \
+            --archive-xcargs "DEVELOPMENT_TEAM=$APPLE_TEAM_ID"
 
     artifacts:
       - build/ios/ipa/*.ipa

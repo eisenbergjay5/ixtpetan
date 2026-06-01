@@ -16,14 +16,8 @@ workflows:
         XCODE_SCHEME: "IXTPetanqueClub"
         BUNDLE_ID: "com.ixt.petanqueclub"
         APP_STORE_APPLE_ID: "6775163240"
-        APPLE_TEAM_ID: "7J7RF4D7KY"
       xcode: latest
       cocoapods: default
-
-    cache:
-      cache_paths:
-        - $HOME/Library/Caches/org.swift.swiftpm
-        - $HOME/Library/Developer/Xcode/DerivedData
 
     triggering:
       events:
@@ -37,39 +31,10 @@ workflows:
       - name: Show Xcode version
         script: xcodebuild -version
 
-      - name: Resolve Swift packages
-        script: |
-          xcodebuild -project "$CM_BUILD_DIR/$XCODE_PROJECT" \
-            -scheme "$XCODE_SCHEME" \
-            -resolvePackageDependencies
-
-      - name: Validate Debug simulator build
-        script: |
-          xcodebuild -project "$CM_BUILD_DIR/$XCODE_PROJECT" \
-            -scheme "$XCODE_SCHEME" \
-            -configuration Debug \
-            -destination 'generic/platform=iOS Simulator' \
-            CODE_SIGNING_ALLOWED=NO \
-            build
-
-      - name: Validate Release device build
-        script: |
-          xcodebuild -project "$CM_BUILD_DIR/$XCODE_PROJECT" \
-            -scheme "$XCODE_SCHEME" \
-            -configuration Release \
-            -sdk iphoneos \
-            CODE_SIGNING_ALLOWED=NO \
-            build
-
       - name: Set up code signing
         script: |
           xcode-project use-profiles \
             --project "$CM_BUILD_DIR/$XCODE_PROJECT"
-          xcodebuild -project "$CM_BUILD_DIR/$XCODE_PROJECT" \
-            -scheme "$XCODE_SCHEME" \
-            -showBuildSettings \
-            DEVELOPMENT_TEAM="$APPLE_TEAM_ID" \
-            | grep -E "DEVELOPMENT_TEAM|CODE_SIGN_STYLE|CODE_SIGN_IDENTITY|PROVISIONING_PROFILE|PRODUCT_BUNDLE_IDENTIFIER"
 
       - name: Increment build number
         script: |
@@ -82,12 +47,11 @@ workflows:
           echo "Using CFBundleVersion=$BUILD_NUMBER"
           agvtool new-version -all "$BUILD_NUMBER"
 
-      - name: Build signed IPA
+      - name: Build IPA
         script: |
           xcode-project build-ipa \
             --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
-            --scheme "$XCODE_SCHEME" \
-            --archive-xcargs "DEVELOPMENT_TEAM=$APPLE_TEAM_ID"
+            --scheme "$XCODE_SCHEME"
 
     artifacts:
       - build/ios/ipa/*.ipa
@@ -100,32 +64,3 @@ workflows:
         auth: integration
         submit_to_testflight: true
         submit_to_app_store: false
-
-  unsigned-ios-simulator-build:
-    name: Unsigned iOS Simulator Build
-    max_build_duration: 30
-    instance_type: mac_mini_m2
-
-    environment:
-      vars:
-        XCODE_PROJECT: "IXTPetanqueClub/IXTPetanqueClub.xcodeproj"
-        XCODE_SCHEME: "IXTPetanqueClub"
-      xcode: latest
-
-    scripts:
-      - name: Resolve Swift packages
-        script: |
-          xcodebuild -project "$CM_BUILD_DIR/$XCODE_PROJECT" \
-            -scheme "$XCODE_SCHEME" \
-            -resolvePackageDependencies
-
-      - name: Build without Apple Developer signing
-        script: |
-          xcodebuild build \
-            -project "$CM_BUILD_DIR/$XCODE_PROJECT" \
-            -scheme "$XCODE_SCHEME" \
-            -configuration Debug \
-            -destination 'generic/platform=iOS Simulator' \
-            CODE_SIGNING_ALLOWED=NO \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY=""

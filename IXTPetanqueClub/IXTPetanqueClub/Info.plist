@@ -30,13 +30,17 @@
 	<string>IXT Pétanque can allow trusted web content to use the microphone when you choose to upload or capture media.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>IXT Pétanque can let you choose photos or videos to upload through trusted web content.</string>
-	<key>UILaunchScreen</key>
-	<dict/>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict/>
 	<key>UIRequiresFullScreen</key>
 	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
 </dict>
 </plist>

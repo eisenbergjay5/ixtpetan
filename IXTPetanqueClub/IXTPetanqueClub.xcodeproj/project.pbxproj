@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D101A012B10000100A00001 /* IXTPetanqueClubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019012B10000100A00001 /* IXTPetanqueClubApp.swift */; };
+		8D101A022B10000100A00001 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019022B10000100A00001 /* AppTheme.swift */; };
+		8D101A032B10000100A00001 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019032B10000100A00001 /* Models.swift */; };
+		8D101A042B10000100A00001 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019042B10000100A00001 /* Components.swift */; };
+		8D101A052B10000100A00001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019052B10000100A00001 /* ContentView.swift */; };
+		8D101A062B10000100A00001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019062B10000100A00001 /* HomeView.swift */; };
+		8D101A072B10000100A00001 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019072B10000100A00001 /* MatchView.swift */; };
+		8D101A082B10000100A00001 /* RankingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019082B10000100A00001 /* RankingsView.swift */; };
+		8D101A092B10000100A00001 /* PlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019092B10000100A00001 /* PlacesView.swift */; };
+		8D101A0A2B10000100A00001 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10190A2B10000100A00001 /* ProfileView.swift */; };
+		8D101A0B2B10000100A00001 /* TournamentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10190B2B10000100A00001 /* TournamentView.swift */; };
+		8D101A0C2B10000100A00001 /* MeasureARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10190C2B10000100A00001 /* MeasureARView.swift */; };
+		8D101A0D2B10000100A00001 /* ClubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10190D2B10000100A00001 /* ClubsView.swift */; };
+		8D101A0E2B10000100A00001 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10190E2B10000100A00001 /* GuideView.swift */; };
+		8D101A0F2B10000100A00001 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10190F2B10000100A00001 /* MoreView.swift */; };
+		8D101A102B10000100A00001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019102B10000100A00001 /* SettingsView.swift */; };
+		8D101A112B10000100A00001 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1019112B10000100A00001 /* Localizable.strings */; };
+		8D101A122B10000100A00001 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1019142B10000100A00001 /* InfoPlist.strings */; };
+		8D101A132B10000100A00001 /* PushNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1019172B10000100A00001 /* PushNotificationService.swift */; };
+		8D101A142B10000100A00001 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1019182B10000100A00001 /* GoogleService-Info.plist */; };
+		8D101A152B10000100A00001 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8D101B112B10000100A00001 /* FirebaseMessaging */; };
+		8D101A162B10000100A00001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D10191B2B10000100A00001 /* Assets.xcassets */; };
+		8D101A172B10000100A00001 /* IXTPetanqueWebKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8D101B132B10000100A00001 /* IXTPetanqueWebKit */; };
+		8D101A182B10000100A00001 /* PlayerProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10191C2B10000100A00001 /* PlayerProfileStore.swift */; };
+		8D101A192B10000100A00001 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10191D2B10000100A00001 /* OnboardingView.swift */; };
+		8D101A1A2B10000100A00001 /* ProfileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10191E2B10000100A00001 /* ProfileEditorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D1018012B10000100A00001 /* IXT Pétanque Club.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IXT Pétanque Club.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1019012B10000100A00001 /* IXTPetanqueClubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IXTPetanqueClubApp.swift; sourceTree = "<group>"; };
+		8D1019022B10000100A00001 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		8D1019032B10000100A00001 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8D1019042B10000100A00001 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		8D1019052B10000100A00001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8D1019062B10000100A00001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8D1019072B10000100A00001 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		8D1019082B10000100A00001 /* RankingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsView.swift; sourceTree = "<group>"; };
+		8D1019092B10000100A00001 /* PlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesView.swift; sourceTree = "<group>"; };
+		8D10190A2B10000100A00001 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8D10190B2B10000100A00001 /* TournamentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentView.swift; sourceTree = "<group>"; };
+		8D10190C2B10000100A00001 /* MeasureARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureARView.swift; sourceTree = "<group>"; };
+		8D10190D2B10000100A00001 /* ClubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsView.swift; sourceTree = "<group>"; };
+		8D10190E2B10000100A00001 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		8D10190F2B10000100A00001 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		8D1019102B10000100A00001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8D1019122B10000100A00001 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D1019132B10000100A00001 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D1019152B10000100A00001 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D1019162B10000100A00001 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D1019172B10000100A00001 /* PushNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
+		8D1019182B10000100A00001 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D1019192B10000100A00001 /* IXTPetanqueClub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IXTPetanqueClub.entitlements; sourceTree = "<group>"; };
+		8D10191A2B10000100A00001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D10191B2B10000100A00001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D10191C2B10000100A00001 /* PlayerProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProfileStore.swift; sourceTree = "<group>"; };
+		8D10191D2B10000100A00001 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8D10191E2B10000100A00001 /* ProfileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D1017022B10000100A00001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D101A152B10000100A00001 /* FirebaseMessaging in Frameworks */,
+				8D101A172B10000100A00001 /* IXTPetanqueWebKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D1016012B10000100A00001 /* IXTPetanqueClub */ = {
+			isa = PBXGroup;
+			children = (
+				8D1019022B10000100A00001 /* AppTheme.swift */,
+				8D1019032B10000100A00001 /* Models.swift */,
+				8D1019042B10000100A00001 /* Components.swift */,
+				8D1019012B10000100A00001 /* IXTPetanqueClubApp.swift */,
+				8D1019052B10000100A00001 /* ContentView.swift */,
+				8D1019062B10000100A00001 /* HomeView.swift */,
+				8D1019072B10000100A00001 /* MatchView.swift */,
+				8D1019082B10000100A00001 /* RankingsView.swift */,
+				8D1019092B10000100A00001 /* PlacesView.swift */,
+				8D10190D2B10000100A00001 /* ClubsView.swift */,
+				8D10190E2B10000100A00001 /* GuideView.swift */,
+				8D10190F2B10000100A00001 /* MoreView.swift */,
+				8D1019102B10000100A00001 /* SettingsView.swift */,
+				8D1019172B10000100A00001 /* PushNotificationService.swift */,
+				8D10191C2B10000100A00001 /* PlayerProfileStore.swift */,
+				8D10191D2B10000100A00001 /* OnboardingView.swift */,
+				8D10191E2B10000100A00001 /* ProfileEditorView.swift */,
+				8D10191B2B10000100A00001 /* Assets.xcassets */,
+				8D10191A2B10000100A00001 /* Info.plist */,
+				8D1019182B10000100A00001 /* GoogleService-Info.plist */,
+				8D1019192B10000100A00001 /* IXTPetanqueClub.entitlements */,
+				8D1019112B10000100A00001 /* Localizable.strings */,
+				8D1019142B10000100A00001 /* InfoPlist.strings */,
+				8D10190A2B10000100A00001 /* ProfileView.swift */,
+				8D10190B2B10000100A00001 /* TournamentView.swift */,
+				8D10190C2B10000100A00001 /* MeasureARView.swift */,
+			);
+			path = IXTPetanqueClub;
+			sourceTree = "<group>";
+		};
+		8D1016022B10000100A00001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1018012B10000100A00001 /* IXT Pétanque Club.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D1016032B10000100A00001 = {
+			isa = PBXGroup;
+			children = (
+				8D1016012B10000100A00001 /* IXTPetanqueClub */,
+				8D1016022B10000100A00001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1015012B10000100A00001 /* IXTPetanqueClub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D101B022B10000100A00001 /* Build configuration list for PBXNativeTarget "IXTPetanqueClub" */;
+			buildPhases = (
+				8D1017012B10000100A00001 /* Sources */,
+				8D1017022B10000100A00001 /* Frameworks */,
+				8D1017032B10000100A00001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IXTPetanqueClub;
+			packageProductDependencies = (
+				8D101B112B10000100A00001 /* FirebaseMessaging */,
+				8D101B132B10000100A00001 /* IXTPetanqueWebKit */,
+			);
+			productName = IXTPetanqueClub;
+			productReference = 8D1018012B10000100A00001 /* IXT Pétanque Club.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D1014012B10000100A00001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					8D1015012B10000100A00001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 8D101B012B10000100A00001 /* Build configuration list for PBXProject "IXTPetanqueClub" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+				Base,
+			);
+			mainGroup = 8D1016032B10000100A00001;
+			packageReferences = (
+				8D101B102B10000100A00001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8D101B122B10000100A00001 /* XCLocalSwiftPackageReference "../Packages/IXTPetanqueWebKit" */,
+			);
+			productRefGroup = 8D1016022B10000100A00001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1015012B10000100A00001 /* IXTPetanqueClub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1017032B10000100A00001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D101A112B10000100A00001 /* Localizable.strings in Resources */,
+				8D101A122B10000100A00001 /* InfoPlist.strings in Resources */,
+				8D101A142B10000100A00001 /* GoogleService-Info.plist in Resources */,
+				8D101A162B10000100A00001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D1017012B10000100A00001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D101A012B10000100A00001 /* IXTPetanqueClubApp.swift in Sources */,
+				8D101A022B10000100A00001 /* AppTheme.swift in Sources */,
+				8D101A032B10000100A00001 /* Models.swift in Sources */,
+				8D101A042B10000100A00001 /* Components.swift in Sources */,
+				8D101A052B10000100A00001 /* ContentView.swift in Sources */,
+				8D101A062B10000100A00001 /* HomeView.swift in Sources */,
+				8D101A072B10000100A00001 /* MatchView.swift in Sources */,
+				8D101A082B10000100A00001 /* RankingsView.swift in Sources */,
+				8D101A092B10000100A00001 /* PlacesView.swift in Sources */,
+				8D101A0D2B10000100A00001 /* ClubsView.swift in Sources */,
+				8D101A0E2B10000100A00001 /* GuideView.swift in Sources */,
+				8D101A0F2B10000100A00001 /* MoreView.swift in Sources */,
+				8D101A102B10000100A00001 /* SettingsView.swift in Sources */,
+				8D101A132B10000100A00001 /* PushNotificationService.swift in Sources */,
+				8D101A182B10000100A00001 /* PlayerProfileStore.swift in Sources */,
+				8D101A192B10000100A00001 /* OnboardingView.swift in Sources */,
+				8D101A1A2B10000100A00001 /* ProfileEditorView.swift in Sources */,
+				8D101A0A2B10000100A00001 /* ProfileView.swift in Sources */,
+				8D101A0B2B10000100A00001 /* TournamentView.swift in Sources */,
+				8D101A0C2B10000100A00001 /* MeasureARView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D1019112B10000100A00001 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D1019122B10000100A00001 /* en */,
+				8D1019132B10000100A00001 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		8D1019142B10000100A00001 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D1019152B10000100A00001 /* en */,
+				8D1019162B10000100A00001 /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D101C012B10000100A00001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8D101C022B10000100A00001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D101C032B10000100A00001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				APS_ENVIRONMENT = development;
+				CODE_SIGN_ENTITLEMENTS = IXTPetanqueClub/IXTPetanqueClub.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]" = NO;
+				"CODE_SIGNING_REQUIRED[sdk=iphonesimulator*]" = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IXTPetanqueClub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ixt.petanqueclub;
+				PRODUCT_NAME = "IXT Pétanque Club";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		8D101C042B10000100A00001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				APS_ENVIRONMENT = production;
+				CODE_SIGN_ENTITLEMENTS = IXTPetanqueClub/IXTPetanqueClub.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]" = NO;
+				"CODE_SIGNING_REQUIRED[sdk=iphonesimulator*]" = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IXTPetanqueClub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ixt.petanqueclub;
+				PRODUCT_NAME = "IXT Pétanque Club";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D101B012B10000100A00001 /* Build configuration list for PBXProject "IXTPetanqueClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D101C012B10000100A00001 /* Debug */,
+				8D101C022B10000100A00001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D101B022B10000100A00001 /* Build configuration list for PBXNativeTarget "IXTPetanqueClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D101C032B10000100A00001 /* Debug */,
+				8D101C042B10000100A00001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		8D101B122B10000100A00001 /* XCLocalSwiftPackageReference "../Packages/IXTPetanqueWebKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/IXTPetanqueWebKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D101B102B10000100A00001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D101B112B10000100A00001 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D101B102B10000100A00001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		8D101B132B10000100A00001 /* IXTPetanqueWebKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D101B122B10000100A00001 /* XCLocalSwiftPackageReference "../Packages/IXTPetanqueWebKit" */;
+			productName = IXTPetanqueWebKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8D1014012B10000100A00001 /* Project object */;
+}

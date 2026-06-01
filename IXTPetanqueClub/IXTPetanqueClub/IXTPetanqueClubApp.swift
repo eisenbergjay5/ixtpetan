@@ -24,7 +24,7 @@ struct IXTPetanqueClubApp: App {
                 .onAppear {
                     UserDefaults.standard.set(appLanguage, forKey: "settings.language")
                 }
-                .onChange(of: appLanguage) { _, newValue in
+                .onChange(of: appLanguage) { newValue in
                     UserDefaults.standard.set(newValue, forKey: "settings.language")
                 }
         }

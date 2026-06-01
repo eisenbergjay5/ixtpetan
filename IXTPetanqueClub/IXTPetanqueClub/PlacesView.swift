@@ -7,6 +7,10 @@ struct PlacesView: View {
     @State private var isLoadingPlaces = false
     @State private var isLoadingWeather = false
     @State private var alertMessage: String?
+    @State private var mapRegion = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 45.7640, longitude: 4.8357),
+        span: MKCoordinateSpan(latitudeDelta: 0.08, longitudeDelta: 0.08)
+    )
 
     private let lyonCoordinate = CLLocationCoordinate2D(latitude: 45.7640, longitude: 4.8357)
 
@@ -52,16 +56,17 @@ struct PlacesView: View {
     }
 
     private var mapPreview: some View {
-        Map(initialPosition: .region(MKCoordinateRegion(
-            center: lyonCoordinate,
-            span: MKCoordinateSpan(latitudeDelta: 0.08, longitudeDelta: 0.08)
-        ))) {
-            ForEach(places.prefix(8)) { place in
-                Marker(place.name, systemImage: "figure.petanque", coordinate: coordinate(for: place))
-                    .tint(ClubTheme.electricBlue)
+        Map(coordinateRegion: $mapRegion, annotationItems: Array(places.prefix(8))) { place in
+            MapAnnotation(coordinate: coordinate(for: place)) {
+                Image(systemName: "figure.petanque")
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundStyle(.white)
+                    .frame(width: 34, height: 34)
+                    .background(ClubTheme.electricBlue)
+                    .clipShape(Circle())
+                    .shadow(color: ClubTheme.electricBlue.opacity(0.45), radius: 10, y: 4)
             }
         }
-        .mapStyle(.standard(elevation: .realistic))
         .frame(height: 280)
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
         .overlay(alignment: .topLeading) {

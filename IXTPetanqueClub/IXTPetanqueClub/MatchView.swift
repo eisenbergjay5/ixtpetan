@@ -52,7 +52,7 @@ struct MatchView: View {
         } message: {
             Text(alertMessage ?? "")
         }
-        .onChange(of: mode) { _, _ in
+        .onChange(of: mode) { _ in
             bluePlayers = Array(bluePlayers.prefix(playersPerTeam))
             redPlayers = Array(redPlayers.prefix(playersPerTeam))
         }
